@@ -89,17 +89,97 @@
 #endregion
 
 #region 8
-int[,] grid1 = { { 1, 2 }, { 3, 4 } };
-int[,] grid2 = new int[2, 2];
+//int[,] grid1 = { { 1, 2 }, { 3, 4 } };
+//int[,] grid2 = new int[2, 2];
 
-for (int r = 0; r < 2; r++)
+//for (int r = 0; r < 2; r++)
+//{
+//    for (int c = 0; c < 2; c++)
+//    {
+//        grid2[r, c] = grid1[r, c];
+//        Console.Write(grid2[r, c] + " ");
+//    }
+//    Console.WriteLine();
+//}
+#endregion
+
+#endregion
+
+#region part3
+
+#region 9
+//static void addval(int x) { x = 10; }
+//static void addref(ref int x) { x = 10; }
+#endregion
+
+#region 10
+//static void changeitem(int[] arr) { arr[0] = 99; }
+//static void replacearray(ref int[] arr) { arr = new int[] { 99 }; }
+#endregion
+
+#region 11
+//static (int sum, int sub) calc(int a, int b, int c, int d)
+//{
+//    return (a + b, c - d);
+//}
+#endregion
+
+#region 12
+//static int sumdigits(int num)
+//{
+//    int sum = 0;
+//    while (num > 0)
+//    {
+//        sum += num % 10;
+//        num /= 10;
+//    }
+//    return sum;
+//}
+#endregion
+
+#region 13
+//static bool IsPrime(int num)
+//{
+//    if (num < 2) return false;
+//    for (int i = 2; i < num; i++)
+//    {
+//        if (num % i == 0) return false;
+//    }
+//    return true;
+//}
+#endregion
+
+#region 14
+//static void MinMaxArray(int[] arr, ref int min, ref int max)
+//{
+//    min = arr[0];
+//    max = arr[0];
+//    for (int i = 0; i < arr.Length; i++)
+//    {
+//        if (arr[i] < min) min = arr[i];
+//        if (arr[i] > max) max = arr[i];
+//    }
+//}
+#endregion
+
+#region 15
+//static int factorial(int num)
+//{
+//    int result = 1;
+//    for (int i = 1; i <= num; i++)
+//    {
+//        result *= i;
+//    }
+//    return result;
+//}
+#endregion
+
+#region 16
+static string ChangeChar(string text, int index, char newchar)
 {
-    for (int c = 0; c < 2; c++)
-    {
-        grid2[r, c] = grid1[r, c];
-        Console.Write(grid2[r, c] + " ");
-    }
-    Console.WriteLine();
+    char[] chars = text.ToCharArray();
+    chars[index] = newchar;
+    return new string(chars);
 }
 #endregion
 
